@@ -1,9 +1,9 @@
 const CACHE_NAME = 'nutrient-finder-cache-v1';
 const urlsToCache = [
-    './',
-    './index.html',
-    './styles.css',
-    './app.js'
+    'Nutrient-Finder/',
+    'Nutrient-Finder/index.html',
+    'Nutrient-Finder/styles.css',
+    'Nutrient-Finder/app.js'
 ];
 
 self.addEventListener('install', event => {
