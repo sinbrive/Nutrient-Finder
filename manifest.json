@@ -1,7 +1,10 @@
 {
     "name": "Nutrient Finder",
-    "short_name": "Nutrient Finder",
-    "start_url": "/index.html",
+    "short_name": "Nutrient-Finder",
+    // Scope and start URL - these need to change to yours
+      "scope": "/Nutrient-Finder/",
+      "start_url": "/Nutrient-Finder/",
+   // "start_url": "/index.html"
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#007bff",
