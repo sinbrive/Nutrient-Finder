@@ -7,6 +7,7 @@
     <title>Nutrient Finder</title>
     <link rel="stylesheet" href="styles.css">
      <link rel="canonical" href="https://sinbrive.github.io/Nutrient-Finder/" />
+    <link rel="manifest" href="/Nutrient-Finder/manifest.json">
     <link rel="manifest" href="manifest.json">
 </head>
 
@@ -25,10 +26,13 @@
     <script src="config.js"></script>
     <script src="app.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', { scope: 'ia-reworked/' });
-        }
-    </script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/Nutrient-Finder/service-worker.js',
+          {scope: '/Nutrient-Finder/'}
+        )
+      }
+  </script>
 </body>
 
 </html>
