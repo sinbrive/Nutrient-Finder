@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrient Finder</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="canonical" href="https://sinbrive.github.io/Nutrient-Finder/" />
+    <link rel="canonical" href="https://sinbrive.github.io/Nutrient-Finder/" />
     <link rel="manifest" href="/Nutrient-Finder/manifest.json">
 </head>
 
@@ -15,6 +15,7 @@
         <h1 class="input-title">Nutrient Finder</h1>
         <div class="input-container">
             <input type="text" id="foodInput" placeholder="Enter a food item">
+            <!-- <textarea id="foodInput" placeholder="Enter a food item"></textarea> -->
             <button onclick="searchNutrients()">Search</button>
         </div>
         <div class="output-container" id="nutrientResults">
@@ -27,7 +28,7 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/Nutrient-Finder/service-worker.js', {scope: '/Nutrient-Finder/'});
+            navigator.serviceWorker.register('/Nutrient-Finder/service-worker.js', { scope: '/Nutrient-Finder/' });
         }
     </script>
 
